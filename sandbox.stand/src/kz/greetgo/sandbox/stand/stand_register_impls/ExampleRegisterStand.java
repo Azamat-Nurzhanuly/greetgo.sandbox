@@ -16,6 +16,8 @@ public class ExampleRegisterStand implements ExampleRegister {
   @Override
   public UserInfo getuserInfo(String personId) {
     
+    //TODO: good
+    
     UserInfo ret = new UserInfo();
     ret.accountName = RND.str(10);
     ret.id = RND.str(10);
