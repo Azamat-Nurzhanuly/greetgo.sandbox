@@ -14,9 +14,7 @@ public class ExampleRegisterStand implements ExampleRegister {
   public BeanGetter<StandDb> db;
 
   @Override
-  public UserInfo example(String personId) {
-
-    //TODO: неверное название. Не понятно для чего метод
+  public UserInfo getuserInfo(String personId) {
     
     UserInfo ret = new UserInfo();
     ret.accountName = RND.str(10);

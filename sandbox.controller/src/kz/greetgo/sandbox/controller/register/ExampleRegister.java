@@ -4,5 +4,5 @@ import kz.greetgo.sandbox.controller.model.UserInfo;
 
 public interface ExampleRegister {
 
-  UserInfo example(String personId);
+  UserInfo getUserInfo(String personId);
 }
