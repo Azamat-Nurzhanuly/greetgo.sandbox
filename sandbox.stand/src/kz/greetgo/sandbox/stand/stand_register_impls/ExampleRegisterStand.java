@@ -16,6 +16,8 @@ public class ExampleRegisterStand implements ExampleRegister {
   @Override
   public UserInfo example(String personId) {
 
+    //TODO: неверное название. Не понятно для чего метод
+    
     UserInfo ret = new UserInfo();
     ret.accountName = RND.str(10);
     ret.id = RND.str(10);
