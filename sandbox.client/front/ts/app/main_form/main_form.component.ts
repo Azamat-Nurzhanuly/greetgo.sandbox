@@ -19,6 +19,7 @@ import {PhoneType} from "../../model/PhoneType";
           {{loadUserInfoError}}
         </div>
       </div>
+      <button (click)="example()">Call Example</button>
       <div *ngIf="userInfo">
 
         <table>
@@ -69,6 +70,17 @@ export class MainFormComponent {
   loadUserInfoError: string | null;
 
   constructor(private httpService: HttpService) {}
+
+  example() {
+
+    this.httpService.get("/example/test").toPromise().then(result => {
+
+      console.log("RESULT", result);
+    }, error => {
+
+      console.error(error);
+    });
+  }
 
   loadUserInfoButtonClicked() {
     this.loadUserInfoButtonEnabled = false;
